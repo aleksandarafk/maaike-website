@@ -1,0 +1,1289 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/*all colors included, naming may be unconventional for some, look at the prototype on Figma if you are confused with the naming*/
+/*Do not change the names of the variables*/
+
+:root {
+  --greenButtons: #8FCB9B;
+  --secondaryButtons: #EAE6E5;
+  --listenButton: #8F8073;
+  --pauseButton: #5F544A;
+  --greenText: #0E513D;
+  --performancesLabel: #5B9279;
+  --contactPopUp: #BDE9C6;
+  --aboutMaaikeAndDiscographyBackground: #EAE6E5;
+  --contactFormBack: #C4C4C4;
+  --white: #fff;
+  --importantText: 'Gloria Hallelujah', sans-serif;
+  --secondaryText: 'Barlow Condensed', cursive;
+  --performancecard: #8F8073;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+html {
+  font-size: 70.5%;
+  /*do not change, unless you really need to*/
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*NAVIGATION BAR PART*/
+header {
+  font-family: var(--importantText);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--white);
+  padding: 1.5rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar a {
+  color: #000;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+
+
+header .navbar a:hover {
+  color: var(--greenText);
+}
+
+header .icons #menu-bars,
+header .icons a {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 5rem;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background: var(--greenButtons);
+  text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover {
+  background-color: var(--greenText);
+  color: var(--white);
+  cursor: pointer;
+
+}
+
+header .icons #menu-bars {
+  display: none;
+  cursor: pointer;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+}
+
+/*END OF PART*/
+
+/*SECTION SETTINGS*/
+section {
+  padding: 2rem 9%;
+}
+
+/*SECTION SETTINGS*/
+
+/*HOME SECTION SETTINGS*/
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+#myVideoPhone {
+  width: 1px;
+  height: 1px;
+}
+
+.text-box {
+  width: 90%;
+  color: var(--aboutMaaikeAndDiscographyBackground);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-family: var(--importantText);
+  font-size: 62px;
+  margin: 0;
+}
+
+.text-box p {
+  font-family: var(--secondaryText);
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+
+.text-box a {
+  font-size: 20px;
+  border-radius: .2rem;
+}
+
+.preSave {
+  width: 20%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--importantText);
+  background: var(--greenButtons);
+  color: #000;
+  padding: 12px 34px;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.preSave:hover {
+  background: var(--greenText);
+  color: var(--aboutMaaikeAndDiscographyBackground);
+}
+
+.readMore {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--importantText);
+  background: var(--secondaryButtons);
+  color: #000;
+  padding: 12px 34px;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  background: var(--listenButton);
+  color: var(--aboutMaaikeAndDiscographyBackground);
+}
+
+/*END OF PART*/
+
+
+/*ABOUT MAAIKE SECTION SETTINGS*/
+
+/*WRITE HERE*/
+#aboutMaaike {
+  background-color: #EAE6E5;
+  height: 100%;
+}
+
+.about-maaike-title {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 8rem;
+  font-family: var(--importantText);
+  position: relative;
+  color: var(--greenText);
+}
+
+.pics-about-page {
+  width: 30rem;
+  height: 80%;
+  position: relative;
+  display: inline-block;
+  transition: 5s ease;
+}
+
+.pics-about-page>img {
+  width: 30rem;
+  height: 40rem;
+}
+
+
+.picandtext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  height: 37rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  font-family: var(--secondaryText);
+  font-size: 160%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text>p {
+  margin-top: 1.5rem;
+}
+
+.black-text {
+  text-align: justify;
+}
+
+.green-text {
+  color: #0E513D;
+  text-align: center;
+}
+
+.contactBtn-about-page {
+  width: 60%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--importantText);
+  background: var(--greenButtons);
+  color: #000;
+  padding: 12px 34px;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.contactBtn-about-page:hover {
+  background: var(--greenText);
+  color: var(--aboutMaaikeAndDiscographyBackground);
+}
+
+.contactBtn-about-page:hover>a {
+  color: #EAE6E5;
+}
+
+.contactBtn-about-page>a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.causes-links {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding-bottom: 2rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.causes-title {
+  font-family: var(--importantText);
+  font-size: 2rem;
+  color: #0E513D;
+}
+
+.causeBtn {
+  width: 10%;
+  text-decoration: none;
+  font-family: var(--importantText);
+  background: var(--greenButtons);
+  color: #000;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.causeBtn:hover {
+  background: var(--greenText);
+  color: var(--aboutMaaikeAndDiscographyBackground);
+}
+.about-pic{
+  padding-right: 3rem;
+}
+.about-pic-responsive{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-pic-responsive{
+    display: block;
+    height: 50rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem ;
+  }
+
+  .about-maaike-title{
+    font-size: 8rem;
+
+  }
+  .about-pic{
+    display: none;
+  }
+  .about-text {
+   font-size: 3rem;
+   padding: 0;
+   max-height: 65rem;
+  overflow-y: scroll;
+  
+  }
+.causes-title{
+  font-size: 5rem;
+  text-align: center;
+}
+  .causes-links {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+.causeBtn{
+  width: 80%;
+  font-size: 2.5rem;
+}
+  .pics-about-page {
+    width: 15rem;
+    height: 30rem;
+    position: relative;
+    display: inline-block;
+    transition: 5s ease;
+  }
+
+  .pics-about-page>img {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .contactBtn-about-page {
+    width: 80%;
+    font-size: 3rem;
+  }
+
+  #aboutMaaike {
+    padding-top: 5rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--aboutMaaikeAndDiscographyBackground);
+  }
+ 
+}
+
+/*END OF PART*/
+
+
+/*PERFORMANCES SECTION SETTINGS*/
+
+#performances {
+  width: 100%;
+  height: 110vh;
+  background-color: var(--white);
+}
+
+.performances-title {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: var(--importantText);
+  position: relative;
+  color: var(--greenText);
+}
+.future{
+  padding-top: 10rem;
+}
+.performance-container {
+  width: min(95%, 50rem);
+  margin: 0 auto;
+
+}
+
+/*upcoming performances*/
+.upcoming-performance-columns {
+  display: flex;
+}
+
+.upcoming-performance-columns>* {
+  flex: 1;
+}
+
+.performances-row {
+  margin: 0 -68px;
+}
+
+.performances-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.performances-column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+.upcoming-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  font-size: medium;
+  font-family: var(--importantText);
+  color: var(--white);
+}
+
+.card-content {
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.050);
+  transition: all 1s;
+  background-color: var(--performancecard);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: block;
+  height: 250px;
+  padding-bottom: 20px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.upcoming-card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.upcoming-card:hover .card-back {
+  transform: rotateY(0);
+}
+
+.card-content img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-body {}
+
+.card-front .card-body {
+  margin-top: -40px;
+}
+
+.card-body h3 {
+
+}
+
+.buy-btn-container {
+  position: absolute;
+  bottom: 5px;
+  margin: auto;
+  width: 100%;
+}
+
+.buy-btn {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  background-color: var(--performancesLabel);
+  width: 50%;
+  padding: 3px;
+  position: relative;
+  cursor: pointer;
+  font-size: 29px;
+  line-height: 35px;
+  color: #EAE6E5;
+}
+
+.upcoming-performance-btn {
+  background-color: var(--performancesLabel);
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  top: -54px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-size: 29px;
+  line-height: 35px;
+  color: #EAE6E5;
+  width: 75%;
+}
+
+
+/*past performances carousel*/
+
+.performances-carousel-container {
+  width: 1280px;
+  margin: auto;
+  height: 200px;
+  position: relative;
+}
+
+.performances-carousel-container .carousel-inner {
+  overflow: hidden;
+}
+
+.performances-track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+
+.performances-card-container {
+  width: 259px;
+  flex-shrink: 0;
+  height: 22rem;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.performances-card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--performancecard);
+  color: var(--white);
+  align-items: center;
+
+}
+
+.performance-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.performance-btn {
+  background-color: var(--performancesLabel);
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  top: -4rem;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-size: 29px;
+  line-height: 35px;
+  color: #EAE6E5;
+  width: 75%;
+}
+
+.performance-card-text {
+  position: relative;
+  top: -2rem;
+  font-size: medium;
+  font-family: var(--importantText);
+  text-align: center;
+  width: 100%;
+
+}
+
+.performance-nav button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--pauseButton);
+  background-color: var(--contactPopUp);
+  color: #5F544A;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.performance-nav .prev-performance-card {
+  left: -30px;
+  display: none;
+}
+
+.performance-nav .prev-performance-card.show {
+  display: block;
+}
+
+.performance-nav .next-performance-card {
+  right: -30px;
+}
+
+.performance-nav .next-performance-card.hide {
+  display: none;
+}
+
+/* RESPONSIVE PART */
+
+@media screen and (max-width: 1024px) {
+
+  .performance-container {
+    width: min(95%, 65rem);
+    margin: 0 auto;
+  }
+
+  .card-content img {
+    height: 350px;
+  }
+
+  .card-back {
+    height: 650px;
+  }
+
+  .card-front {
+    height: 650px;
+  }
+
+  .upcoming-card {
+    height: 650px;
+  }
+
+  .card-body {
+    font-size: 2.17em;
+  }
+
+  .performance-card-text {
+    font-size: medium;
+  }
+
+  .performances-carousel-container {
+    width: 30%;
+    transform: scale(2.3);
+    margin: 256px auto;
+  }
+
+  .performances-title {
+    padding: 1rem;
+    font-size: 8rem;
+  }
+
+  .performances-row {
+    width: 80%;
+    margin: auto;
+  }
+
+  .performances-column {
+
+    padding: 10px;
+  }
+
+  .performances-column {
+    width: 100%;
+
+    display: block;
+    margin-bottom: 50px;
+
+  }
+
+  #performances {
+    width: 100%;
+    height: 100%;
+  }
+
+  .performances-card .performance-img {}
+
+  .performances-card {
+    transform: scal
+  }
+
+  .performances-column .performance-btn {
+    transform: scale(1.5);
+  }
+
+  .upcoming-performance-btn {
+    font-size: 70px;
+    line-height: 70px;
+    padding: 10px;
+    top: -98px;
+  }
+
+  .buy-btn {
+    font-size: 70px;
+    line-height: 70px;
+    padding: 10px;
+
+  }
+
+}
+
+/*END OF PART*/
+
+
+/*MUSIC/DISCOGRAPHY SECTION SETTINGS*/
+
+section {
+  width: 100%;
+  height: 85vh;
+  padding: 0;
+}
+
+#music {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--aboutMaaikeAndDiscographyBackground);
+}
+
+.discography-title {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 8rem;
+  font-family: var(--importantText);
+  position: relative;
+  color: var(--greenText);
+}
+
+.carousel-container {
+  width: 1280px;
+  margin: 50px auto;
+  min-height: 200px;
+  position: relative;
+}
+
+
+.carousel-container .carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-container .track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+
+.carousel-container .card-container {
+  width: 259px;
+  flex-shrink: 0;
+  height: 29rem;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.carousel-container .card-container .card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--pauseButton);
+  background-color: var(--contactPopUp);
+  color: #5F544A;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.nav .prev {
+  left: -30px;
+  display: none;
+}
+
+.nav .prev.show {
+  display: block;
+}
+
+.nav .next {
+  right: -30px;
+}
+
+.nav .next.hide {
+  display: none;
+}
+
+.card:hover {
+  filter: saturate(160%);
+}
+
+.card>* {
+  flex: 1;
+}
+
+.song-title {
+  text-align: center;
+  font-family: var(--importantText);
+  font-size: 1.6rem;
+}
+
+.cover-photo {
+  position: relative;
+  border: 2px solid var(--greenText);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.play-btn {
+  background-color: var(--listenButton);
+  color: var(--secondaryButtons);
+  font-family: var(--importantText);
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  position: relative;
+  top: -28rem;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: var(--pauseButton);
+}
+
+.disk-photo {
+  position: relative;
+  height: 12.2rem;
+  width: 12.2rem;
+  top: -19.5rem;
+  left: 5.4rem;
+  z-index: 2;
+}
+.stick-photo{
+  height: 15rem;
+  width: 8rem;
+  z-index: 99;
+  position: relative;
+  top: -33rem;
+  left: -1rem;
+}
+.pause>.play-btn {
+  background-color: var(--pauseButton);
+}
+.pause >.stick-photo{
+  transition: 0.5s;
+  left: -0.5rem;
+  width: 9rem;
+  transform: rotate(-12deg);
+}
+.pause:hover>.play-btn {
+  background-color: var(--listenButton);
+}
+
+.pause>.disk-photo {
+  animation: rotateIn 15s infinite ease-in-out;
+
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+.music-platforms-title {
+  font-family: var(--importantText);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--greenText);
+}
+
+#music{
+  height: 100vh;
+}
+.music-platforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links-to-platforms {
+  display: flex;
+  gap: 3rem;
+}
+
+.links-to-platforms>a {
+  line-height: 4.5rem;
+  font-size: 4rem;
+  color: var(--greenText);
+  margin-bottom: 5rem;
+}
+
+.links-to-platforms>a:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    width: 30%;
+    transform: scale(2.3);
+    margin-bottom: 25rem;
+  }
+#music{
+  height: 100%;
+}
+  .discography-title {
+    padding: 18rem;
+    font-size: 8rem;
+    position: relative;
+    top: -10rem;
+  }
+
+  .music-platforms>h3 {
+    font-size: 3rem;
+  }
+
+  .music-platforms {
+    flex-direction: column;
+
+  }
+
+  .links-to-platforms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links-to-platforms>a {
+    font-size: 6rem;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  textarea{
+    height: 45rem;
+  }
+ 
+.title-cont > .contact-title-main{   
+   font-size: 6rem;
+   padding-bottom: 5rem;
+  }
+}
+
+/*END OF PART*/
+
+
+/*CONTACT SECTION SETTINGS*/
+
+#contact {
+  background-color: var(--contactPopUp);
+  font-family: var(--importantText);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-title-main {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 8rem;
+  font-family: var(--importantText);
+  color: var(--greenText);
+}
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  position: relative;
+}
+
+/* .contact-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(50px);
+} */
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--contactFormBack);
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.contact-left {
+  height: 100%;
+  background: url('images/homeBackground.png') no-repeat center;
+  background-size: cover;
+}
+
+.contact-right {
+  padding: 25px 40px;
+
+}
+
+.contact-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+
+.contact-field {
+  width: 45%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+  outline: none;
+  border: none;
+  font-family: var(--importantText);
+}
+
+.contact-field:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.contact-field:focus {
+  background-color: #fff;
+}
+
+.contact-area {
+  min-height: 150px;
+  min-width: 91.5%;
+  resize: none;
+}
+
+.contact-btn {
+  width: 35%;
+  font-size: 2.1rem;
+  background-color: var(--greenButtons);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: var(--importantText);
+}
+
+.contact-btn:hover {
+  background-color: var(--performancesLabel);
+  color: #fff;
+}
+
+.topBtn {
+  background-color: var(--greenButtons);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.topBtn:hover
+{
+  background-color: var(--greenText);
+}
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*END OF PART*/
+
+
+/*ANIMATION PART - FOR LATER USE */
+/*END OF PART*/
+/*RESPONSIVE PART - APPLIES FOR PHONE AND PC - USE THIS WHEN YOU HAVE TO MAKE IT RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  #myVideo {
+    display: none;
+  }
+
+  #myVideoPhone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+  }
+
+  form
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+  }
+
+#contact
+{
+  height: 100%;
+}
+
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #f7f7f7;
+    border-top: 0.1rem solid var(--white);
+    border-bottom: 0.1rem solid var(--white);
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    width: 100%;
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: var(--white);
+    border: 0.1rem solid var(--white);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+
+  .text-box h1 p {
+    font-size: 100%;
+  }
+
+  .text-box a {
+    font-size: 2rem;
+    border-radius: .2rem;
+  }
+
+  .preSave {
+    width: 100%;
+  }
+
+  .readMore {
+    width: 50%;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .contact-left {
+    display: none;
+  }
+  .contact-field{
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .contact-title{
+    font-size: 3.5rem;
+  }
+  .contact-btn{
+    font-size: 4rem;
+  }
+  .links-to-platforms>a{
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+
+  header .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #f7f7f7;
+    border-top: 0.1rem solid var(--white);
+    border-bottom: 0.1rem solid var(--white);
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: var(--white);
+    border: 0.1rem solid var(--white);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+
+  .text-box h1 a p {
+    justify-content: center;
+  }
+
+  .home {
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .contact-left {
+    display: none;
+  }
+  #contact{
+    height: 150%;
+  }
+  
+}
+
+/*END OF PART*/

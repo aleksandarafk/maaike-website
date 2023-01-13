@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Maaike Girardin | HOME</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- used for navigation icons + social media icons -->
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="dropdown.css">
+  <link rel="stylesheet" href="flag-icons.css">
+  <link rel="stylesheet" href="flag-icons.min.css">
+  <script>
+    const language = "nl"
+  </script>
+</head>
+
+<body>
+  <!--  navigation bar settings, do not change -->
+  <header>
+    <a href="index.html" class="logo"><img src="images/logo.png" height="50px"></a>
+    <nav class="navbar">
+      <a href="#">huis</a>
+      <a href="#aboutMaaike">Over mij</a>
+      <a href="#performances">uitvoeringen</a>
+      <a href="#music">muziek</a>
+      <a href="#contact">aansluiten</a>
+    </nav>
+
+    <div class="icons">
+      <ul>
+        <li>
+          <a class="icon fas fa-heart"></a>
+          <ul class="dropdown">
+            <li><a href="https://open.spotify.com/user/1130327144?si=545418c55d7a4da3" target="_blank"
+                class="fa-brands fa-spotify"></a></li>
+            <li><a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank"
+                class="fa-brands fa-instagram"></a></li>
+            <li><a href="https://soundcloud.com/maaikegirardin" target="_blank" class="fa-brands fa-soundcloud"></a>
+            </li>
+            <li><a href="https://www.facebook.com/maaikegirardinmusic" target="_blank"
+                class="fa-brands fa-facebook"></a></li>
+            <li><a href="https://www.youtube.com/user/MaaikeGirardin" target="_blank" class="fa-brands fa-youtube"></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="fa-solid fa-earth-europe" id="icon"></a>
+          <ul class="dropdown">
+            <li><img src="images/gb.svg" width=50px; class="flag" id="english"></li>
+            <li><img src="images/nl.svg" width=50px; class="flag" id="dutch"></li>
+            <li><img src="images/it.svg" width=50px; class="flag" id="italian"></li>
+          </ul>
+        </li>
+        <li>
+          <div id="menu-bars" class="fas fa-bars"></div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- end of part -->
+
+
+  <!-- home section settings, do not change -->
+  <section id="home">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="myVideoPhone">
+      <source src="images/background-ph.mp4" type="video/mp4">
+
+    </video>
+    <div class="text-box">
+      <h1> "Onderweg" </h1>
+      <p> Maaike's EP komt eindelijk uit ! </p>
+      <a href="https://li.sten.to/maggie" target="_blank" class="preSave"> Vóór de woest </a> <br>
+      <a href="#popup1" class="readMore"> Lees verder </a>
+    </div>
+  </section>
+  <!-- end of part -->
+
+
+  <!-- about Maaike section settings -->
+  <section id="aboutMaaike">
+    <h2 class="about-maaike-title">Over maaike</h2>
+    <img class="about-pic-responsive" src="images/groupPhoto3.jpg">
+    <div class="picandtext">
+      <div class="pics-about-page">
+       
+        <img class="about-pic" src="images/maaike1.jpg">
+      </div>
+      <div class="about-text">
+        <p class="black-text">Maaike is de songwriter van een Nederlands-Canadese zangeres, die altijd heeft gereisd
+          over de wereld. Haar muziek heeft vaak een
+          vrouwelijke toon, maar zit vol met haar
+          verborgen gedachten, bekentenissen en
+          gebroken harten. Zodat u ontroerd
+          blijft door haar muziek. In
+          De afgelopen jaren heeft ze gereisd en
+          gespeeld op stages in Nederland,
+          Canada, België, Italië, Israël, Chili,
+          Brazilië, Bolivia, Vietnam, Thailand
+          en Australië, waar ze heeft
+          gewerkt met veel muzikanten
+          waaronder Siciliaanse mensen
+          muzikanten, een Zweedse jazzgitarist,
+          een beatboxer en een flamenco
+          gitarist. De uitvoering op de
+          Zweedse ambassade in Hanoi en de
+          Blue Note Jazz Club in Milaan zijn
+          Momenten waarop ze nog steeds trots op terugkijkt.
+          </p>
+        <p class="green-text">"Ze heeft iets persoonlijks.
+          Ze presenteert haar wereld aan jou.
+          Ze deelt haar
+          emoties.Ze klinkt als niemand
+          anders. Maar ze blijft gewoon maaike. Dit is
+          Wat een kunstenaar maakt.” -
+          Dariana Koumanova
+          Conductor Orchestra San
+          Remo Festival</p>
+        <p class="black-text">In Italië was ze in de nationale
+          Finale van Tour Music Fest en won
+          ze de prijs "Artista di Merito". Ze
+          heeft prijzen gewonnen bij de stem van de Kunstenaar
+          Muziekconferentie in verschillende
+          Categorieën in Italië. Ze is momenteel
+          Gevestigd in Sicilië en volgt haar
+          Studies aan de Rockacademie online
+          terwijl ze aan haar Album werkt
+          met een Italiaanse gitarist. Haar
+          Ambitie is om zoveel zielen mogelijk aan te raken
+          met haar muziek.</p>
+        <button class="contactBtn-about-page"><a href="#contact">Neem contact op met maaike</a></button>
+      </div>
+
+    </div>
+    <div class="causes-links">
+      <h3 class="causes-title">Lees over oorzaken dicht bij het hart van Maaike:</h3>
+      <button class="causeBtn">Oorzaak</button>
+      <button class="causeBtn">Oorzaak</button>
+      <button class="causeBtn">Oorzaak</button>
+    </div>
+  </section>
+  <!-- end of part -->
+
+
+  <!-- performances section settings -->
+  <section id="performances">
+    <h2 class="performances-title future">Aankomende uitvoeringen</h2>
+    <div class="performance-container">
+      <div class="upcoming-performance-columns">
+        <div class="performances-col">
+          <div class="performances-row">
+            <!--upcoming performances card-->
+            <div class="performances-column">
+              <div class="upcoming-card">
+                <div class="card-content card-front">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0x-ENm1MWwdblYg0NNueD_G5HkuWWO3UN-6qRynclVnN7g_Ch43RrC-kTYTGYlUFJfo&usqp=CAU"
+                    alt="Dog" />
+                  <button class="upcoming-performance-btn">Rotterdam</button>
+                  <div class="card-body">
+                    <h3>rolling stones 2022</h3>
+                    <h3>Bezoek hier</h3>
+                  </div>
+                </div>
+                <div class="card-content card-back">
+                  <div class="card-body">
+                    <h3>Maaike</h3>
+                    <p>Maaike is de songwriter van een Nederlands-Canadese zanger, die de hele wereld over heeft gereisd.</p>
+                    <div class="buy-btn-container">
+                      <button class="buy-btn">Kopen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--upcoming performances card-->
+            <div class="performances-col">
+              <div class="performances-column">
+                <div class="upcoming-card">
+                  <div class="card-content card-front">
+                    <img
+                      src="https://c8.alamy.com/comp/MMYH9G/rolling-stones-urban-jungle-tour-europe-1990-munchen-olympiastadion-musical-concert-poster-MMYH9G.jpg"
+                      alt="Dog" />
+                    <button class="upcoming-performance-btn">Amsterdam</button>
+                    <div class="card-body">
+                      <h3>rolling stones 2022</h3>
+                      <h3>Bezoek hier</h3>
+                    </div>
+                  </div>
+                  <div class="card-content card-back">
+                    <div class="card-body">
+                      <h3>Maaike</h3>
+                      <p>Maaike is de songwriter van een Nederlands-Canadese zanger, die de hele wereld over heeft gereisd.</p>
+                      <div class="buy-btn-container">
+                        <button class="buy-btn">Kopen</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--upcoming performances card-->
+            <div class="performances-col">
+              <div class="performances-column">
+                <div class="upcoming-card">
+                  <div class="card-content card-front">
+                    <img src="images/performance photos/performance.jpg" alt="Dog" />
+                    <button class="upcoming-performance-btn">Eindhoven</button>
+                    <div class="card-body">
+                      <h3>rolling stones 2022</h3>
+                      <h3>Bezoek hier</h3>
+                    </div>
+                  </div>
+                  <div class="card-content card-back">
+                    <div class="card-body">
+                      <h3>Maaike</h3>
+                      <p>Maaike is de songwriter van een Nederlands-Canadese zanger, die de hele wereld over heeft gereisd.</p>
+                      <div class="buy-btn-container">
+                        <button class="buy-btn">Kopen</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--start of performances carousel-->
+    <h2 class="performances-title">Vroeger in het verleden</h2>
+    <div class="performances-carousel-container">
+      <div class="carousel-inner">
+        <div class="performances-track">
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0x-ENm1MWwdblYg0NNueD_G5HkuWWO3UN-6qRynclVnN7g_Ch43RrC-kTYTGYlUFJfo&usqp=CAU"
+                alt="event photo">
+              <button class="performance-btn">Utrecht</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img"
+                src="data:image/jpeg;base64,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"
+                alt="event photo">
+              <button class="performance-btn">Groningen</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img" src="images/performance photos/performance.jpg" alt="event photo">
+              <button class="performance-btn">Maastricht</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img" src="images/performance photos/performance.jpg" alt="event photo">
+              <button class="performance-btn">Eindhoven</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img" src="images/performance photos/performance.jpg" alt="event photo">
+              <button class="performance-btn">Leiden</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img" src="images/performance photos/performance.jpg" alt="event photo">
+              <button class="performance-btn">Haarlem</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--card-->
+          <div class="performances-card-container">
+            <div class="performances-card">
+              <img class="performance-img" src="images/performance photos/performance.jpg" alt="event photo">
+              <button class="performance-btn">Eindhoven</button>
+              <div class="performance-card-text">
+                <h3>rolling stones festival</h3>
+                <h3>Bezoek hier</h3>
+              </div>
+            </div>
+          </div>
+          <!--end cards-->
+        </div>
+      </div>
+      <!--Button to go move the performances slider to left-->
+      <div class="performance-nav">
+        <button class="prev-performance-card">
+          <i class="material-icons">
+            keyboard_arrow_left
+          </i>
+        </button>
+        <!--Button to go move the slider to right-->
+        <button class="next-performance-card">
+          <i class="material-icons">
+            keyboard_arrow_right
+          </i>
+        </button>
+      </div>
+    </div>
+    <!--End of performances carousel-->
+  </section>
+  <!-- end of part -->
+
+
+  <!-- music section settings -->
+  <section id="music">
+    <h2 class="discography-title">Discografie</h2>
+    <!--The carrousel with the songs-->
+    <div class="carousel-container">
+      <div class="carousel-inner">
+        <div class="track">
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+          <div class="card-container">
+            <!--Song-->
+            <div class="card">
+              <img class="cover-photo" src="images/music photos/Cover Idea-01.png">
+              <img class="disk-photo" src="images/music photos/disk-01-01.png">
+              <audio src="audios/Classical-guitar-music.mp3"></audio>
+              <h4 class="song-title">"On my way"</h4>
+              <button class="play-btn">Toneelstuk</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--Button to go move the slider to left-->
+      <div class="nav">
+        <button class="prev">
+          <i class="material-icons">
+            keyboard_arrow_left
+          </i>
+        </button>
+        <!--Button to go move the slider to right-->
+        <button class="next">
+          <i class="material-icons">
+            keyboard_arrow_right
+          </i>
+        </button>
+      </div>
+    </div>
+    <!--End of music slider-->
+
+    <!--Links to music platforms-->
+    <div class="music-platforms">
+      <h3 class="music-platforms-title">Luister naar al me muziek op mijn muziekplatforms:</h3>
+      <div class="links-to-platforms">
+        <a href="https://open.spotify.com/user/1130327144?si=545418c55d7a4da3" target="_blank"
+          class="fa-brands fa-spotify"></a>
+        <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank" class="fa-brands fa-instagram"></a>
+        <a href="https://soundcloud.com/maaikegirardin" target="_blank" class="fa-brands fa-soundcloud"></a>
+        <a href="https://www.facebook.com/maaikegirardinmusic" target="_blank" class="fa-brands fa-facebook"></a>
+        <a href="https://www.youtube.com/user/MaaikeGirardin" target="_blank" class="fa-brands fa-youtube"></a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- end of part -->
+
+
+  <!-- contactpage section settings -->
+  <section id="contact">
+    <div class="title-cont">
+      <h2 class="contact-title-main">Verbonden met Maaike</h2>
+    </div>
+    <div class="contact-box">
+      <div class="contact-left"></div>
+      <div class="contact-right">
+
+        <form action="https://formsubmit.co/pandurskacveta@gmail.com" method="POST">
+          <h2 class="contact-title">Vul het formulier in</h2>
+          <input type="text" class="contact-field" placeholder="Voornaam" name="First name" required>
+          <input type="text" class="contact-field" placeholder="Achternaam" name="Last name" required>
+          <input type="email" class="contact-field" placeholder="enEMail" name="E-mail" required>
+          <select class="contact-field" name="Subject" required>
+            <option value="" disabled selected>Onderwerp</option>
+            <option value="Subject 1">Samenwerking</option>
+            <option value="Subject 2">Met waaier gerelateerd</option>
+            <option value="Subject 3">Uitvoeringen</option>
+            <option value="Subject 4">Andere vraag</option>
+          </select> </br>
+          <textarea placeholder="Uw bericht" class="contact-field contact-area" name="Message" required rows="10" cols="10"></textarea>
+          <button type="submit" class="contact-btn">Versturen</button>
+        </form>
+
+      </div>
+     
+      <footer>
+        <button class="topBtn">^</button>
+      </footer>
+      
+    </div>
+    <div class="music-platforms">
+      <!-- <h3 class="music-platforms-title">Listen to all my music on my music platforms:</h3> -->
+      <div class="links-to-platforms">
+        <a href="https://open.spotify.com/user/1130327144?si=545418c55d7a4da3" target="_blank"
+          class="fa-brands fa-spotify"></a>
+        <a href="https://www.instagram.com/maaikegirardinmusic/" target="_blank" class="fa-brands fa-instagram"></a>
+        <a href="https://soundcloud.com/maaikegirardin" target="_blank" class="fa-brands fa-soundcloud"></a>
+        <a href="https://www.facebook.com/maaikegirardinmusic" target="_blank" class="fa-brands fa-facebook"></a>
+        <a href="https://www.youtube.com/user/MaaikeGirardin" target="_blank" class="fa-brands fa-youtube"></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end of part -->
+
+  <!-- pop up settings, do not change, keep it at the bottom -->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Mijn eerste EP-“On my way”</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Lijst met liedjes:<br>
+        1. On my way<br>
+        2. Golden<br>
+        3. When you changed the game<br>
+        Eerste deel: 20.05.2022<br>
+        Tweede deel: Zomer 2022
+      </div>
+    </div>
+  </div>
+  <!-- end of part -->
+
+  <script src="https://kit.fontawesome.com/7b3c62550d.js" crossorigin="anonymous"></> <!-- do not change -->
+  <script src="navigation.js"></script>
+  <script src="music.js"></script>
+  <script src="performances.js"></script>
+  <script src="topbutton.js"></script>
+  <script src="language.js"></script>
+
+  <script>
+  //use this space if you want to experiment with something, but create a seperate js file after you are done if you want to use it
+  </script>
+</body>
+
+</html>
