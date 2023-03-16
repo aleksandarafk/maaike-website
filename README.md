@@ -28,7 +28,7 @@ This project was done for our client Maaike Girardin. For this project, we had t
 ### Used technologies
 The website was fully coded using HTML / CSS and JS. 
 # Installation
-You do not need to clone this repo. Simply go to: http://i477569.hera.fhict.nl/Website/index.html to preview the website
+You do not need to clone this repo. Simply go to: http://i477569.hera.fhict.nl/Website/index.html to preview the website.
 # Credits
 ### Team
 * <a href="https://git.fhict.nl/I477568">Aleksandar Karamirev</a>
